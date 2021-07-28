@@ -1,0 +1,22 @@
+{
+  "name": "signupbackend",
+  "version": "1.0.0",
+  "description": "Sign Up App",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "Fanuel Nyoni",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.3",
+    "nodemon": "^2.0.12"
+  },
+  "keywords": [],
+  "devDependencies": {}
+}
