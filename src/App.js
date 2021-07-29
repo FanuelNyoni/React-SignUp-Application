@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Component } from "react";
 import axios from "axios";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Navbar from "./components/navbar.component";
 
@@ -81,62 +82,63 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div>
-          <Navbar />
-        </div>
+      <div>
+        <Navbar />
         <br />
 
-        <div className="Form-div">
-          <form onSubmit={this.onSubmit}>
-            <input
-              type="text"
-              placeholder="First Name"
-              onChange={this.changeFirstName}
-              value={this.state.firstname}
-              className="form-control form-group"
-            ></input>
+        <div className="container bg-light">
+          <div className="Form-div">
+            <form onSubmit={this.onSubmit}>
+              <input
+                type="text"
+                placeholder="First Name"
+                onChange={this.changeFirstName}
+                value={this.state.firstname}
+                className="form-control form-group"
+              ></input>
 
-            <input
-              type="text"
-              placeholder="Last Name"
-              onChange={this.changeLastName}
-              value={this.state.lastname}
-              className="form-control form-group"
-            ></input>
+              <input
+                type="text"
+                placeholder="Last Name"
+                onChange={this.changeLastName}
+                value={this.state.lastname}
+                className="form-control form-group"
+              ></input>
 
-            <input
-              type="text"
-              placeholder="Username"
-              onChange={this.changeUserName}
-              value={this.state.username}
-              className="form-control form-group"
-            ></input>
+              <input
+                type="text"
+                placeholder="Username"
+                onChange={this.changeUserName}
+                value={this.state.username}
+                className="form-control form-group"
+              ></input>
 
-            <input
-              type="text"
-              placeholder="Email Address"
-              onChange={this.changeEmail}
-              value={this.state.email}
-              className="form-control form-group"
-            ></input>
+              <input
+                type="text"
+                placeholder="Email Address"
+                onChange={this.changeEmail}
+                value={this.state.email}
+                className="form-control form-group"
+              ></input>
 
-            <input
-              type="password"
-              placeholder="Password"
-              onChange={this.changePassword}
-              value={this.state.password}
-              className="form-control form-group"
-            ></input>
+              <input
+                type="password"
+                placeholder="Password"
+                onChange={this.changePassword}
+                value={this.state.password}
+                className="form-control form-group"
+              ></input>
 
-            <input
-              type="submit"
-              value="Submit"
-              className="btn btn-danger btn-block"
-            ></input>
-          </form>
+              <input
+                type="submit"
+                value="Submit"
+                className="btn btn-danger btn-block"
+              ></input>
+            </form>
+          </div>
         </div>
       </div>
+
     );
   }
 }
