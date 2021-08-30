@@ -71,3 +71,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 "# SignUp-Application" 
 "# SignUp-App" 
 "# React-Signup-App" 
+"# React-SignUp-Application" 
+"# React-SignUp-Application" 
